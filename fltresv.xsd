@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xsd:simpleType name="Flight_Num_Type">
+		<xsd:restriction base="xsd:integer">
+			<xsd:pattern value="[1-9][0-9]"/>
+			<xsd:pattern value="[1-9][0-9][0-9]"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	 <xsd:simpleType name="Boolean_Type">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="true"/>
+			<xsd:enumeration value="false"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="Phone_Type">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="\d{3}-[a-zA-Z0-9]{3}-[a-zA-Z0-9]{4}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:element name="Fltresv">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="All_flights">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Flight" minOccurs="0" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="Flight_num" type="Flight_Num_Type" minOccurs="1" maxOccurs="1"/>
+										<xsd:element name="Dep_time" type="xsd:time" minOccurs="1" maxOccurs="1"/>
+										<xsd:element name="Duration" type="xsd:duration" minOccurs="1" maxOccurs="1"/>
+										<xsd:element name="Capacity" type="xsd:positiveInteger" minOccurs="1" maxOccurs="1"/>
+										<xsd:element name="Seasonal" type="Boolean_Type" minOccurs="1" maxOccurs="1"/>
+										<xsd:element name="Origin" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+										<xsd:element name="Destination" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="All_requests">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Request" minOccurs="0" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="Agent_name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+										<xsd:element name="Request_date" type="xsd:date" minOccurs="1" maxOccurs="1"/>
+										<xsd:element name="Contact_person" minOccurs="0" maxOccurs="1">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="Name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+													<xsd:element name="Phone" type="Phone_Type" minOccurs="1" maxOccurs="1"/>
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+										<xsd:element name="Reservation" minOccurs="1" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="Flight" type="Flight_Num_Type" minOccurs="1" maxOccurs="1"/>
+													<xsd:element name="Travel_date" type="xsd:date" minOccurs="1" maxOccurs="1"/>
+													<xsd:element name="Num_of_seats" type="xsd:positiveInteger" minOccurs="1" maxOccurs="1"/>
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

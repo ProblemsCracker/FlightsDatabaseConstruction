@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<Fltresv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="F:/study/HomeWork/DBHW/HW3/fltresv.xsd">
+	<All_flights>
+		<Flight>
+			<Flight_num>215</Flight_num>
+			<Dep_time>13:40:00</Dep_time>
+			<Duration>PT57M</Duration>
+			<Capacity>30</Capacity>
+			<Seasonal>false</Seasonal>
+			<Origin>Los Angeles</Origin>
+			<Destination>San Francisco</Destination>
+		</Flight>
+		<Flight>
+			<Flight_num>113</Flight_num>
+			<Dep_time>14:50:00</Dep_time>
+			<Duration>PT70M</Duration>
+			<Capacity>80</Capacity>
+			<Seasonal>false</Seasonal>
+			<Origin>Los Angeles</Origin>
+			<Destination>Salt Lake City</Destination>
+		</Flight>
+		<Flight>
+			<Flight_num>114</Flight_num>
+			<Dep_time>16:00:00</Dep_time>
+			<Duration>PT180M</Duration>
+			<Capacity>30</Capacity>
+			<Seasonal>true</Seasonal>
+			<Origin>San Francisco</Origin>
+			<Destination>Minneapolis</Destination>
+		</Flight>
+		<Flight>
+			<Flight_num>675</Flight_num>
+			<Dep_time>09:07:00</Dep_time>
+			<Duration>PT294M</Duration>
+			<Capacity>102</Capacity>
+			<Seasonal>false</Seasonal>
+			<Origin>San Francisco</Origin>
+			<Destination>New York</Destination>
+		</Flight>
+		<Flight>
+			<Flight_num>879</Flight_num>
+			<Dep_time>09:30:00</Dep_time>
+			<Duration>PT138M</Duration>
+			<Capacity>24</Capacity>
+			<Seasonal>false</Seasonal>
+			<Origin>Los Angeles</Origin>
+			<Destination>Seattle</Destination>
+		</Flight>
+		<Flight>
+			<Flight_num>124</Flight_num>
+			<Dep_time>20:00:00</Dep_time>
+			<Duration>PT50M</Duration>
+			<Capacity>58</Capacity>
+			<Seasonal>true</Seasonal>
+			<Origin>Los Angeles</Origin>
+			<Destination>San Jose</Destination>
+		</Flight>
+		<Flight>
+			<Flight_num>156</Flight_num>
+			<Dep_time>12:50:00</Dep_time>
+			<Duration>PT270M</Duration>
+			<Capacity>124</Capacity>
+			<Seasonal>false</Seasonal>
+			<Origin>Seattle</Origin>
+			<Destination>Washington</Destination>
+		</Flight>
+		<Flight>
+			<Flight_num>354</Flight_num>
+			<Dep_time>10:46:00</Dep_time>
+			<Duration>PT57M</Duration>
+			<Capacity>60</Capacity>
+			<Seasonal>true</Seasonal>
+			<Origin>Los Angeles</Origin>
+			<Destination>San Francisco</Destination>
+		</Flight>
+		<Flight>
+			<Flight_num>567</Flight_num>
+			<Dep_time>17:30:00</Dep_time>
+			<Duration>PT145M</Duration>
+			<Capacity>45</Capacity>
+			<Seasonal>false</Seasonal>
+			<Origin>Seattle</Origin>
+			<Destination>Phoenix</Destination>
+		</Flight>
+		<Flight>
+			<Flight_num>845</Flight_num>
+			<Dep_time>07:34:00</Dep_time>
+			<Duration>PT287M</Duration>
+			<Capacity>100</Capacity>
+			<Seasonal>false</Seasonal>
+			<Origin>Los Angeles</Origin>
+			<Destination>New York</Destination>
+		</Flight>
+	</All_flights>
+	<All_requests>
+		<Request>
+			<Agent_name>Tee Advantures</Agent_name>
+			<Request_date>2013-08-30</Request_date>
+			<Contact_person>
+				<Name>Thomas Karcher</Name>
+				<Phone>293-856-9134</Phone>
+			</Contact_person>
+			<Reservation>
+				<Flight>113</Flight>
+				<Travel_date>2013-11-20</Travel_date>
+				<Num_of_seats>5</Num_of_seats>
+			</Reservation>
+		</Request>
+		<Request>
+			<Agent_name>Sinclair Travel</Agent_name>
+			<Request_date>2013-08-25</Request_date>
+			<Contact_person>
+				<Name>William King</Name>
+				<Phone>103-333-8840</Phone>
+			</Contact_person>
+			<Reservation>
+				<Flight>215</Flight>
+				<Travel_date>2013-11-22</Travel_date>
+				<Num_of_seats>6</Num_of_seats>
+			</Reservation>
+		</Request>
+		<Request>
+			<Agent_name>Iberica Travel</Agent_name>
+			<Request_date>2013-08-30</Request_date>
+			<Contact_person>
+				<Name>Carol Sawyer</Name>
+				<Phone>107-834-8900</Phone>
+			</Contact_person>
+			<Reservation>
+				<Flight>215</Flight>
+				<Travel_date>2013-11-22</Travel_date>
+				<Num_of_seats>10</Num_of_seats>
+			</Reservation>
+		</Request>
+		<Request>
+			<Agent_name>Norco Travel</Agent_name>
+			<Request_date>2013-10-05</Request_date>
+			<Reservation>
+				<Flight>675</Flight>
+				<Travel_date>2013-12-05</Travel_date>
+				<Num_of_seats>8</Num_of_seats>
+			</Reservation>
+		</Request>
+		<Request>
+			<Agent_name>Tee Advantures</Agent_name>
+			<Request_date>2013-10-09</Request_date>
+			<Contact_person>
+				<Name>Albert Parks</Name>
+				<Phone>224-980-8907</Phone>
+			</Contact_person>
+			<Reservation>
+				<Flight>879</Flight>
+				<Travel_date>2013-12-24</Travel_date>
+				<Num_of_seats>14</Num_of_seats>
+			</Reservation>
+		</Request>
+		<Request>
+			<Agent_name>Voyagers Amerik</Agent_name>
+			<Request_date>2013-09-24</Request_date>
+			<Contact_person>
+				<Name>Geoff Marks</Name>
+				<Phone>213-908-4564</Phone>
+			</Contact_person>
+			<Reservation>
+				<Flight>567</Flight>
+				<Travel_date>2013-12-06</Travel_date>
+				<Num_of_seats>4</Num_of_seats>
+			</Reservation>
+		</Request>
+		<Request>
+			<Agent_name>Gold Tours</Agent_name>
+			<Request_date>2013-10-31</Request_date>
+			<Contact_person>
+				<Name>Samantha Grace</Name>
+				<Phone>213-786-9035</Phone>
+			</Contact_person>
+			<Reservation>
+				<Flight>215</Flight>
+				<Travel_date>2013-11-22</Travel_date>
+				<Num_of_seats>7</Num_of_seats>
+			</Reservation>
+		</Request>
+		<Request>
+			<Agent_name>Metro Tours</Agent_name>
+			<Request_date>2013-08-07</Request_date>
+			<Contact_person>
+				<Name>Chuck Bartowski</Name>
+				<Phone>310-987-7828</Phone>
+			</Contact_person>
+			<Reservation>
+				<Flight>354</Flight>
+				<Travel_date>2013-11-23</Travel_date>
+				<Num_of_seats>11</Num_of_seats>
+			</Reservation>
+		</Request>
+		<Request>
+			<Agent_name>Mayfield Travel</Agent_name>
+			<Request_date>2013-10-09</Request_date>
+			<Contact_person>
+				<Name>Pearl Gardner</Name>
+				<Phone>264-654-9083</Phone>
+			</Contact_person>
+			<Reservation>
+				<Flight>215</Flight>
+				<Travel_date>2013-12-05</Travel_date>
+				<Num_of_seats>6</Num_of_seats>
+			</Reservation>
+		</Request>
+		<Request>
+			<Agent_name>Metro Tours</Agent_name>
+			<Request_date>2013-11-01</Request_date>
+			<Reservation>
+				<Flight>215</Flight>
+				<Travel_date>2013-11-22</Travel_date>
+				<Num_of_seats>8</Num_of_seats>
+			</Reservation>
+		</Request>
+	</All_requests>
+</Fltresv>
